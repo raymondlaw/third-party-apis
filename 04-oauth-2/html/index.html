@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Add To Todist</title>
+		<style>
+			body, form{
+				margin:20px auto;
+				max-width:800px;
+				overflow-x:hidden;
+			}
+			fieldset{
+				display: flex;
+			}
+			input#task{
+				flex-grow:100;
+				margin: 0 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="add_task" method="get">
+			<fieldset>
+				<legend>Add to Todoist</legend>
+				<label for="task">Task:</label><br />
+				<input id="task" name="task" type="text" />
+				<input type="submit" value="Add" />
+			</fieldset>
+		</form>
+	</body>
+</html>

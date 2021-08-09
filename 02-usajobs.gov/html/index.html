@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Usajobs.gov Jobs API Search</title>
+		<style>
+			body, form{
+				margin:20px auto;
+				max-width:800px;
+				overflow-x:hidden;
+			}
+			fieldset{
+				display: flex;
+			}
+			input#description{
+				flex-grow:50;
+				margin: 0 20px;
+			}
+			input#location{
+				flex-grow:50;
+				margin: 0 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="search" method="get">
+			<fieldset>
+				<legend>Usajobs.gov Jobs API Search</legend>
+				<label for="description">Job Description:</label>
+				<input id="description" name="description" type="text" />
+				
+				<label for="location">Location:</label>
+				<input id="location" name="location" type="text" />
+				<input type="submit" value="Search" />
+			</fieldset>
+		</form>
+	</body>
+</html>
