@@ -96,7 +96,7 @@ function receive_access_token(body, task, res){
 }
 
 function send_add_task_request(task, access_token, res){
-	const task_endpoint = "https://api.todoist.com/rest/v1/tasks";
+	const task_endpoint = "https://api.todoist.com/rest/v2/tasks";
 	const post_data = JSON.stringify({"content":task});
 	const options = {
 		method: "POST",
